@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #6C63FF;
+    --text-color: #333;
+    --light-gray: #F5F5F5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff;
+}
+
+.navbar {
+    width: 100%;
+    height: 10vh;
+    z-index: 2;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.container-navbar{
+    justify-content: space-around;
+    background-color: rgba(173, 216, 230, .8);
+    align-items: center;
+    height: 100%;
+    display: flex;
+    width: 100%;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    margin-left: 2rem;
+}
+
+.nav-links li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav-links a {
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .6);
+    font-weight: 900;
+    color: white;
+    margin: 0 1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background: skyblue;
+}
+
+.nav-buttons {
+    display: flex;
+}
+
+.nav-buttons button {
+    padding: .8rem 1.5rem;
+    border-radius: 25px;
+    border: none;
+    margin-left: 1rem;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .6);
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.login-btn {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background: rgba(135, 206, 235);
+}
+
+.pre-order-btn {
+    background: rgba(135, 206, 235);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.hero-section {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url('orangtandon.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: initial;
+}
+
+.preorder-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    width: 50%;
+}
+
+.preorder-container h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.preorder-container input,
+.preorder-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.preorder-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.preorder-container button:hover {
+    background-color: #0056b3;
+}

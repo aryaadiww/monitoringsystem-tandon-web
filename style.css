@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #6C63FF;
+    --text-color: #333;
+    --light-gray: #F5F5F5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff;
+}
+
+.navbar {
+    width: 100%;
+    height: 10vh;
+    z-index: 2;
+    position: fixed;
+}
+
+.container-navbar{
+    justify-content: space-around;
+    background-color: rgba(173, 216, 230, .8);
+    align-items: center;
+    height: 100%;
+    display: flex;
+    width: 100%;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    margin-left: 2rem;
+}
+
+.nav-links li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav-links a {
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .6);
+    font-weight: 900;
+    color: white;
+    margin: 0 1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background: skyblue;
+}
+
+.nav-buttons {
+    display: flex;
+}
+
+.nav-buttons button {
+    padding: .8rem 1.5rem;
+    border-radius: 25px;
+    border: none;
+    margin-left: 1rem;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .6);
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.login-btn {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background: rgba(135, 206, 235);
+}
+
+.pre-order-btn {
+    background: rgba(135, 206, 235);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.hero-section {
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url('orangtandon.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: initial;
+}
+
+.container-beranda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.badge {
+    display: inline-block;
+    background: rgba(108, 99, 255, 0.1);
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: white;
+    line-height: 1.2;
+    margin-top: 10rem;
+    text-shadow: 1px 1px rgba(0, 0, 0, .6);
+    font-weight: 800;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    position: relative;
+}
+
+.subtitle {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    position: relative;
+    color: white;
+    font-weight: 800;
+    text-shadow: 1px 1px rgba(0, 0, 0, .6);
+    font-size: 1.2rem;
+    margin: 1rem 0 2rem;
+}
+
+.search-bar {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto 4rem;
+    background: var(--light-gray);
+    border-radius: 30px;
+    padding: 0.5rem;
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+.search-bar button {
+    background: var(--primary-color);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+
+    .nav-buttons {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .hero-section {
+        padding: 2rem 2%;
+    }
+
+    .feature-card {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .tentang {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .container-tentang-atas {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .tentang-kiri, .tentang-kanan {
+        width: 100%;
+        border: none;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
+    .testimonials {
+        padding: 2rem 1rem;
+    }
+
+    .footer {
+        padding: 2rem 1rem;
+    }
+
+    h1, h2, h3, p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
+
+
+.tentang{
+    width: 100%;
+    height: auto;
+}
+
+.judul-tentang{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    padding: 1.5rem 0;
+}
+
+.container-tentang-atas{
+    display: flex;
+    height: 70%;
+}
+
+.tentang-kiri{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tentang-kiri img{
+    width: 100%;
+    height: 80%;
+    filter: drop-shadow(rgba(0, 0, 0, .6) 8px 15px 5px) drop-shadow(rgba(0, 0, 0, .6) -5px -5px);
+}
+
+.demo{
+    width: 100%;
+    height: 100%;
+}
+
+.container-tentang-video{
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-tentang-video video {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 8px 10px 6px rgba(0, 0, 0, 1);
+}
+
+.container-penjelasan{
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teks-penjelasan{
+    width: 70%;
+    text-align: center;
+}
+
+.teks-penjelasan p{
+    font-family: "Montserrat", serif;
+    letter-spacing: .5px;
+    font-size: 1.2rem;
+}
+
+.container-tentang-bawah{
+    height: 30%;
+    width: 100%;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    padding: 2rem;
+}
+
+.feature-card {
+    width: 25%;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: white;
+    padding: 1rem;
+}
+
+.feature-icon{
+    font-size: 2.5rem;
+    width: 20%;
+}
+
+.feature-info{
+    width: 80%;
+    border-left: 1px solid black;
+    padding: .3rem;
+}
+
+.feature-card h3 {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+    color: #666;
+    font-size: 1rem;
+}
+
+.testimonials {
+    text-align: center;
+    height: 70vh;
+    padding: 4rem;
+    width: 100%;
+    background-image: url('bercakgantengcok.webp');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-testimoni{
+    background-color: rgba(255, 255, 255, .9);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.testimonials p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-image img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.testimonial-content {
+    max-width: 600px;
+    text-align: center;
+}
+
+.testimonial-content blockquote {
+    font-style: italic;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.testimonial-content cite {
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.quote-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    position: absolute;
+}
+
+.quote-icon:first-of-type {
+    top: -2rem;
+    left: 5%;
+}
+
+.quote-icon:last-of-type {
+    bottom: -2rem;
+    right: 5%;
+}
+
+.footer {
+    background-color: #f5f5f5;
+    padding: 4rem 5%;
+    text-align: left;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.footer-logo {
+    flex: 1;
+    max-width: 300px;
+}
+
+.footer-logo img {
+    width: 100px;
+    height: auto;
+}
+
+.footer-form {
+    flex: 1;
+    max-width: 400px;
+}
+
+.footer-form h4 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.footer-form p {
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.footer-form input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.footer-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    resize: none;
+    height: 100px;
+}
+
+.footer-form button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 1rem;
+}
+
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    margin-right: 1rem;
+    color: #666;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: var(--primary-color);
+}
+
+.testimonial-slider {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial {
+    display: none;
+    transition: opacity 0.5s ease;
+}
+
+.testimonial.active {
+    display: block;
+    opacity: 1;
+}
+
+.indicators {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot.active {
+    background-color: var(--primary-color);
+}
+
+.hero-section canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.penjualan {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.container-penjualan {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.penjualan-card {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.penjualan-statistics {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.data-label {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.percentage {
+    color: green;
+}
+
+.progress-bar {
+    background: #e0e0e0;
+    border-radius: 5px;
+    height: 10px;
+    margin: 10px 0;
+}
+
+.progress {
+    background: #3b82f6;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.penjualan-chart {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.penjualan-description {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.get-started-btn {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Tambahkan CSS untuk hamburger menu */
+.nav-toggle {
+    display: none; /* Sembunyikan toggle di layar besar */
+    cursor: pointer;
+}
+
+.nav-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #333;
+    transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Sembunyikan nav-links secara default */
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(173, 216, 230, .8);
+        position: absolute;
+        top: 10vh; /* Sesuaikan dengan tinggi navbar */
+        left: 0;
+    }
+
+    .nav-links.active {
+        display: flex; /* Tampilkan nav-links ketika aktif */
+    }
+
+    .nav-toggle {
+        display: block; /* Tampilkan toggle di layar kecil */
+    }
+}

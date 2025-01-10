@@ -1,0 +1,86 @@
+/* General card styling */
+.card-tinggi {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    background-color: #f9f9f9;
+  }
+  
+  .card-tinggi-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #333;
+  }
+  
+  .card-tinggi-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Layout for water level visualization */
+  .water-level-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  /* Water tank styling */
+  .water-tank {
+    position: relative;
+    width: 120px;
+    height: 300px;
+    border: 4px solid #333;
+    border-radius: 20px;
+    background-color: #e0e0e0;
+    margin: 20px auto;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .tank-cap {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #ff7f50;
+    border-radius: 20px 20px 0 0;
+  }
+  
+  .water {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(to top, rgba(0, 150, 255, 0.7), rgba(0, 100, 255, 0.5));
+    border-radius: 0 0 20px 20px;
+    transition: height 0.5s ease-in-out;
+    animation: wave 2s infinite;
+  }
+  
+  @keyframes wave {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+  }
+  
+  /* Info text */
+  .water-level-info {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #555;
+    font-weight: bold;
+  }
+  
+  /* Status info */
+  .status-info {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
